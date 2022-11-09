@@ -1,0 +1,24 @@
+.box{
+    border: 3px solid tomato;
+    background-color: aqua;
+}
+.box1{
+    @extend.box;
+    width: 100px;
+    height: 50px;
+}
+.box2{
+    @extend.box;
+    width: 200px;
+    height: 50px;
+}
+.box3{
+    @extend.box;
+    width: 400px;
+    height: 50px;
+}
+.box4{
+    @extend.box;
+    width: 500px;
+    height: 50px;
+}

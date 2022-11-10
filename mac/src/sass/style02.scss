@@ -1,0 +1,16 @@
+@mixin ress {
+    margin: 0;
+    padding: 0;
+}
+@mixin text {
+    line-height: 8;
+    text-align: center;
+}
+.box{
+    @include ress;
+    @include text;
+    border: 1px solid tomato;
+    background-color: blue;
+    width: 125px;
+    height: 125px;
+}

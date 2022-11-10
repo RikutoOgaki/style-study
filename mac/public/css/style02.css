@@ -1,0 +1,10 @@
+.box {
+  margin: 0;
+  padding: 0;
+  line-height: 8;
+  text-align: center;
+  border: 1px solid tomato;
+  background-color: blue;
+  width: 125px;
+  height: 125px;
+}

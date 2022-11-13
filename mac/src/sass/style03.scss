@@ -1,0 +1,22 @@
+// ↓変数の指定
+$color-red:#ed3323;
+$color-blue:#2121ff;
+*{
+    margin: 0;
+    padding: 0;
+}
+// ↓指定したい内容を保存していちいち指定しなくていいいようにする
+@mixin size {
+    width: 125px;
+    height: 125px;
+    line-height: 8;
+    text-align: center;
+}
+.box:nth-child(even){
+    @include size;
+    background-color: $color-red;
+}
+.box:nth-child(odd){
+    @include size;
+    background-color: $color-blue; 
+}

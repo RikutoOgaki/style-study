@@ -1,15 +1,26 @@
 // ↓変数の指定
 $color-red:#ed3323;
 $color-blue:#2121ff;
+$color-green:#06e806;
 *{
     margin: 0;
     padding: 0;
+}
+.cont{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 // ↓指定したい内容を保存していちいち指定しなくていいいようにする
 @mixin size {
     width: 125px;
     height: 125px;
     line-height: 8;
+    color: #fff;
     text-align: center;
 }
 .box:nth-child(even){
@@ -19,4 +30,8 @@ $color-blue:#2121ff;
 .box:nth-child(odd){
     @include size;
     background-color: $color-blue; 
+}
+.box:nth-child(6){
+    @include size;
+    background-color: $color-green;
 }

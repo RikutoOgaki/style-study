@@ -3,10 +3,21 @@
   padding: 0;
 }
 
+.cont {
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .box:nth-child(even) {
   width: 125px;
   height: 125px;
   line-height: 8;
+  color: #fff;
   text-align: center;
   background-color: #ed3323;
 }
@@ -15,6 +26,16 @@
   width: 125px;
   height: 125px;
   line-height: 8;
+  color: #fff;
   text-align: center;
   background-color: #2121ff;
+}
+
+.box:nth-child(6) {
+  width: 125px;
+  height: 125px;
+  line-height: 8;
+  color: #fff;
+  text-align: center;
+  background-color: #06e806;
 }

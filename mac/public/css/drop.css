@@ -21,20 +21,14 @@ nav .nav {
 nav .nav > li {
   width: 18em;
   height: 5em;
-  background-color: #333;
+  background-color: #000056;
 }
 nav .nav > li a:hover {
-  background-color: #a4a4a4;
-  color: #333;
+  background-color: #222255;
+  color: #fff;
 }
-nav .nav > li .navChild li {
-  width: 18em;
-  height: 5em;
-  background-color: #333;
-}
-nav .nav > li .navChild li a:hover {
-  background-color: #a4a4a4;
-  color: #333;
+nav .nav > li a:hover .navChild li {
+  display: block;
 }
 nav .nav > li:first-child {
   width: 8em;
@@ -42,8 +36,18 @@ nav .nav > li:first-child {
   background-color: tomato;
 }
 nav .nav > li:first-child a:hover {
-  background-color: #d56e5b;
+  background-color: #e84d32;
   color: #fff;
+}
+nav .nav > li .navChild li {
+  width: 18em;
+  height: 5em;
+  background-color: #333;
+  display: none;
+}
+nav .nav > li .navChild li a:hover {
+  background-color: #a4a4a4;
+  color: #333;
 }
 nav .nav li a {
   display: block;

@@ -22,28 +22,36 @@ nav .nav > li {
   width: 18em;
   height: 5em;
   background-color: #000056;
+  border-left: 1px solid #fff;
 }
 nav .nav > li a:hover {
   background-color: #222255;
   color: #fff;
 }
-nav .nav > li a:hover .navChild li {
+nav .nav > li:hover .navChild {
   display: block;
 }
 nav .nav > li:first-child {
   width: 8em;
   height: 5em;
   background-color: tomato;
+  border-left: none;
 }
 nav .nav > li:first-child a:hover {
   background-color: #e84d32;
   color: #fff;
 }
+nav .nav > li .navChild {
+  display: none;
+}
 nav .nav > li .navChild li {
   width: 18em;
   height: 5em;
   background-color: #333;
-  display: none;
+  border-bottom: dotted 1px #fff;
+}
+nav .nav > li .navChild li:last-child {
+  border: none;
 }
 nav .nav > li .navChild li a:hover {
   background-color: #a4a4a4;

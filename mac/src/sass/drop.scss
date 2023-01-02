@@ -18,27 +18,36 @@ nav{
             width: 18em;
             height: 5em;
             background-color: #000056;
+            border-left: 1px solid #fff;
             & a:hover{
                 background-color: #222255;
                 color: #fff;
-                & .navChild li{
-                    display: block;
-                }
+            }
+            &:hover .navChild{
+                display: block;
             }
             &:first-child{
                 width: 8em;
                 height: 5em;
                 background-color: tomato;
+                border-left: none;
                 & a:hover{
                     background-color: #e84d32;
                     color: #fff;
                 }
             }
+            & .navChild{
+                display: none;
+            }
             & .navChild li{
                 width: 18em;
                 height: 5em;
                 background-color: #333;
-                display: none;
+                border-bottom: dotted 1px #fff;
+                // display: none;
+                &:last-child{
+                    border: none;
+                }
                 & a:hover{
                     background-color: #a4a4a4;
                     color: #333;
